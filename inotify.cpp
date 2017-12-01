@@ -24,7 +24,7 @@ while(1){
 
 
 
-  wd = inotify_add_watch( fd, "/mnt/secret/jobs/doing", 
+  wd = inotify_add_watch( fd, "/path/to/notify", 
                          IN_MODIFY | IN_CREATE | IN_DELETE );
   
   length = read( fd, buffer, BUF_LEN );  
